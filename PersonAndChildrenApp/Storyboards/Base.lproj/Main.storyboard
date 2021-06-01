@@ -169,7 +169,7 @@
                                                 <action selector="cancelButtonPressed:" destination="56U-fP-1X0" id="Peo-bQ-VpU"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="AXE-sh-jva">
+                                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="done" id="AXE-sh-jva">
                                             <connections>
                                                 <action selector="doneButtonPressed:" destination="56U-fP-1X0" id="Y4M-Gu-LH5"/>
                                             </connections>

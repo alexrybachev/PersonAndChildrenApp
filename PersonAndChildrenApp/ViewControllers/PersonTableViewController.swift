@@ -22,12 +22,13 @@ class PersonTableViewController: UITableViewController {
     private var kids: [Child] = [] {
         didSet {
             if kids.count >= 5 {
-                addButton.isEnabled = false
+                navigationItem.rightBarButtonItem = nil
             } else {
-                addButton.isEnabled = true
+                navigationItem.rightBarButtonItem = addButton
             }
         }
     }
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillDisappear(animated)
