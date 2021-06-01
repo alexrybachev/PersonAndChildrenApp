@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		284302042665281F00A82809 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284302032665281F00A82809 /* AppDelegate.swift */; };
 		284302062665281F00A82809 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284302052665281F00A82809 /* SceneDelegate.swift */; };
-		284302082665281F00A82809 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284302072665281F00A82809 /* ViewController.swift */; };
 		2843020B2665281F00A82809 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 284302092665281F00A82809 /* Main.storyboard */; };
 		2843020D2665282000A82809 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2843020C2665282000A82809 /* Assets.xcassets */; };
 		284302102665282000A82809 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2843020E2665282000A82809 /* LaunchScreen.storyboard */; };
+		2843021D2665307800A82809 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2843021C2665307800A82809 /* Person.swift */; };
+		2843021F266531AF00A82809 /* PersonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2843021E266531AF00A82809 /* PersonTableViewController.swift */; };
+		284302242665385700A82809 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284302232665385700A82809 /* PersonTableViewCell.swift */; };
+		28430228266553A600A82809 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28430227266553A600A82809 /* StorageManager.swift */; };
+		284ED2DA26658D83000107FF /* ChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284ED2D926658D83000107FF /* ChildViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		284302002665281F00A82809 /* PersonAndChildrenApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonAndChildrenApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		284302032665281F00A82809 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		284302052665281F00A82809 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		284302072665281F00A82809 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2843020A2665281F00A82809 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2843020C2665282000A82809 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2843020F2665282000A82809 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		284302112665282000A82809 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2843021C2665307800A82809 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		2843021E266531AF00A82809 /* PersonTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewController.swift; sourceTree = "<group>"; };
+		284302232665385700A82809 /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
+		28430227266553A600A82809 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		284ED2D926658D83000107FF /* ChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,67 @@
 		284302022665281F00A82809 /* PersonAndChildrenApp */ = {
 			isa = PBXGroup;
 			children = (
-				284302032665281F00A82809 /* AppDelegate.swift */,
-				284302052665281F00A82809 /* SceneDelegate.swift */,
-				284302072665281F00A82809 /* ViewController.swift */,
-				284302092665281F00A82809 /* Main.storyboard */,
-				2843020C2665282000A82809 /* Assets.xcassets */,
-				2843020E2665282000A82809 /* LaunchScreen.storyboard */,
-				284302112665282000A82809 /* Info.plist */,
+				2843021B2665306400A82809 /* Model */,
+				284302182665300800A82809 /* ViewControllers */,
+				285BD9AD2665A13100BE6014 /* Services */,
+				2843021726652FFD00A82809 /* Storyboards */,
+				2843021A2665303100A82809 /* Supporting */,
+				284302192665302100A82809 /* Resources */,
 			);
 			path = PersonAndChildrenApp;
+			sourceTree = "<group>";
+		};
+		2843021726652FFD00A82809 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				284302092665281F00A82809 /* Main.storyboard */,
+				2843020E2665282000A82809 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		284302182665300800A82809 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2843021E266531AF00A82809 /* PersonTableViewController.swift */,
+				284ED2D926658D83000107FF /* ChildViewController.swift */,
+				284302232665385700A82809 /* PersonTableViewCell.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		284302192665302100A82809 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2843020C2665282000A82809 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2843021A2665303100A82809 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				284302032665281F00A82809 /* AppDelegate.swift */,
+				284302052665281F00A82809 /* SceneDelegate.swift */,
+				284302112665282000A82809 /* Info.plist */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		2843021B2665306400A82809 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2843021C2665307800A82809 /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		285BD9AD2665A13100BE6014 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				28430227266553A600A82809 /* StorageManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +197,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				284302082665281F00A82809 /* ViewController.swift in Sources */,
+				284302242665385700A82809 /* PersonTableViewCell.swift in Sources */,
+				2843021F266531AF00A82809 /* PersonTableViewController.swift in Sources */,
+				284ED2DA26658D83000107FF /* ChildViewController.swift in Sources */,
 				284302042665281F00A82809 /* AppDelegate.swift in Sources */,
+				2843021D2665307800A82809 /* Person.swift in Sources */,
 				284302062665281F00A82809 /* SceneDelegate.swift in Sources */,
+				28430228266553A600A82809 /* StorageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +352,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6P96P67U8G;
-				INFOPLIST_FILE = PersonAndChildrenApp/Info.plist;
+				INFOPLIST_FILE = PersonAndChildrenApp/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +360,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = alexrybachev.PersonAndChildrenApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,7 +371,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6P96P67U8G;
-				INFOPLIST_FILE = PersonAndChildrenApp/Info.plist;
+				INFOPLIST_FILE = PersonAndChildrenApp/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +379,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = alexrybachev.PersonAndChildrenApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

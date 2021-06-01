@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X8u-yH-SCG">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Обо мне и детях-->
+        <scene sceneID="n44-66-oof">
+            <objects>
+                <tableViewController id="2La-ze-3iH" customClass="PersonTableViewController" customModule="PersonAndChildrenApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="oTO-Va-J7J">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="personCell" rowHeight="173" id="zbO-BW-rcE" customClass="PersonTableViewCell" customModule="PersonAndChildrenApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="24.5" width="320" height="173"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zbO-BW-rcE" id="6r5-hT-kgQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="173"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="JgT-aN-eyn">
+                                            <rect key="frame" x="16" y="11" width="288" height="151"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="zcW-vx-kpY">
+                                                    <rect key="frame" x="0.0" y="0.0" width="85" height="151"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Фамилия:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ivf-6j-wTx">
+                                                            <rect key="frame" x="0.0" y="0.0" width="85" height="22"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5h-dc-sHm">
+                                                            <rect key="frame" x="0.0" y="43" width="85" height="22"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Отчество:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZQ-6G-GHT">
+                                                            <rect key="frame" x="0.0" y="86" width="85" height="22"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Возраст:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F7e-Yo-MjT">
+                                                            <rect key="frame" x="0.0" y="129" width="85" height="22"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="85" id="s00-Og-4h2"/>
+                                                    </constraints>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="lFb-3o-aWC">
+                                                    <rect key="frame" x="101" y="0.0" width="187" height="151"/>
+                                                    <subviews>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Фамилия" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fAN-IT-A5y">
+                                                            <rect key="frame" x="0.0" y="0.0" width="187" height="35.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hXG-TB-Zae">
+                                                            <rect key="frame" x="0.0" y="38.5" width="187" height="35.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Отчество" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tcg-ct-w2Y">
+                                                            <rect key="frame" x="0.0" y="77" width="187" height="35.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Возраст" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Yp-cX-X5l">
+                                                            <rect key="frame" x="0.0" y="115.5" width="187" height="35.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="JgT-aN-eyn" firstAttribute="trailing" secondItem="6r5-hT-kgQ" secondAttribute="trailingMargin" id="JpC-dj-1Od"/>
+                                        <constraint firstItem="JgT-aN-eyn" firstAttribute="leading" secondItem="6r5-hT-kgQ" secondAttribute="leadingMargin" id="NVa-Ph-uOP"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="JgT-aN-eyn" secondAttribute="bottom" id="eD3-Qd-M1p"/>
+                                        <constraint firstItem="JgT-aN-eyn" firstAttribute="top" secondItem="6r5-hT-kgQ" secondAttribute="topMargin" id="lDG-YG-PIX"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="ageTF" destination="3Yp-cX-X5l" id="eMp-bX-GT3"/>
+                                    <outlet property="firstNameTF" destination="hXG-TB-Zae" id="Tfu-qH-frc"/>
+                                    <outlet property="middleNameTF" destination="Tcg-ct-w2Y" id="Ymv-Bq-bZx"/>
+                                    <outlet property="surnameTF" destination="fAN-IT-A5y" id="RrB-oF-DbI"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="childCell" textLabel="Ysk-l5-YNm" detailTextLabel="rIO-NB-lfE" rowHeight="81" style="IBUITableViewCellStyleValue1" id="rGe-uq-wtn">
+                                <rect key="frame" x="0.0" y="197.5" width="320" height="81"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rGe-uq-wtn" id="sfN-gN-5Vy">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="81"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ysk-l5-YNm">
+                                            <rect key="frame" x="16" y="31" width="34.5" height="19.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rIO-NB-lfE">
+                                            <rect key="frame" x="262" y="31" width="42" height="19.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="2La-ze-3iH" id="xrI-iV-wMU"/>
+                            <outlet property="delegate" destination="2La-ze-3iH" id="x7o-QO-qFm"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Обо мне и детях" id="igr-hq-Gcw">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="cyR-oL-UJt">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addChild" destination="2La-ze-3iH" id="vOJ-uL-8dc"/>
+                                <segue destination="56U-fP-1X0" kind="presentation" id="6mP-6D-laf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addButton" destination="cyR-oL-UJt" id="obQ-23-COk"/>
+                        <outlet property="tableTView" destination="oTO-Va-J7J" id="bIj-u8-IgQ"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IUL-qJ-XqY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="327.536231884058" y="-50.223214285714285"/>
+        </scene>
+        <!--Child View Controller-->
+        <scene sceneID="FOO-nT-edy">
+            <objects>
+                <viewController id="56U-fP-1X0" customClass="ChildViewController" customModule="PersonAndChildrenApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jPh-VE-CcG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pz9-S9-wJR">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="B8N-Hh-164"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Данные о ребенке" id="eAt-fb-Qlg">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="shH-tp-yVQ">
+                                            <connections>
+                                                <action selector="cancelButtonPressed:" destination="56U-fP-1X0" id="Peo-bQ-VpU"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="AXE-sh-jva">
+                                            <connections>
+                                                <action selector="doneButtonPressed:" destination="56U-fP-1X0" id="Y4M-Gu-LH5"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="0KL-5g-wgu">
+                                <rect key="frame" x="20" y="104" width="280" height="84"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Имя ребенка" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KXY-hv-oTN">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Возраст ребенка" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rnC-U1-gbn">
+                                        <rect key="frame" x="0.0" y="50" width="280" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="S1T-ts-OXr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pz9-S9-wJR" firstAttribute="leading" secondItem="S1T-ts-OXr" secondAttribute="leading" id="94a-Sh-abA"/>
+                            <constraint firstItem="S1T-ts-OXr" firstAttribute="trailing" secondItem="0KL-5g-wgu" secondAttribute="trailing" constant="20" id="Plv-ot-vPf"/>
+                            <constraint firstItem="0KL-5g-wgu" firstAttribute="top" secondItem="pz9-S9-wJR" secondAttribute="bottom" constant="60" id="Ydz-rU-PEd"/>
+                            <constraint firstItem="pz9-S9-wJR" firstAttribute="top" secondItem="S1T-ts-OXr" secondAttribute="top" id="fXm-Va-LUq"/>
+                            <constraint firstItem="pz9-S9-wJR" firstAttribute="centerX" secondItem="0KL-5g-wgu" secondAttribute="centerX" id="tYf-U5-zsL"/>
+                            <constraint firstItem="0KL-5g-wgu" firstAttribute="leading" secondItem="S1T-ts-OXr" secondAttribute="leading" constant="20" id="zzc-iw-dUV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="05r-w5-MgG"/>
+                    <connections>
+                        <outlet property="childAgeTF" destination="rnC-U1-gbn" id="Rjv-pq-I7d"/>
+                        <outlet property="childNameTF" destination="KXY-hv-oTN" id="BDg-L8-vsD"/>
+                        <outlet property="doneButton" destination="AXE-sh-jva" id="GS3-WF-jAl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e4Y-9s-qBW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1063" y="-51"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4yZ-DH-dKS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="X8u-yH-SCG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="eAx-U8-Xsb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.41364681720000002" green="0.58377104999999996" blue="0.80787414310000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.413672924" green="0.57965373990000002" blue="0.81179636720000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" red="0.41364681720000002" green="0.58377104999999996" blue="0.80787414310000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2La-ze-3iH" kind="relationship" relationship="rootViewController" id="VBp-Rz-wDB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zjd-z2-S1N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-403" y="-50"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
